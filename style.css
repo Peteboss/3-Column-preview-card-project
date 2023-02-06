@@ -1,0 +1,221 @@
+:root{
+    --clr-primary-100: hsl(31, 77%, 52%);
+    --clr-primary-200: hsl(184, 100%, 22%);
+    --clr-primary: hsl(179, 100%, 13%);
+
+    --clr-neutral-100: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-200: hsl(0, 0%, 95%);
+
+    --ff-accent: 'Lexend Deca';
+    --ff-base: 'Big Shoulders Display';
+
+    --fw-regular:500;
+    --fw-bold:700; 
+}
+
+::-webkit-scrollbar{
+    width: 60px;
+    height: 10px;
+    display: none;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{  margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body{
+    background-color: var(--clr-neutral-200);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-900);
+
+    margin: 4rem .5rem;
+}
+
+.component{
+    background: var(--clr-neutral-200);
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin: 1rem;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.grid__group{
+    background: var(--clr-primary-100);
+    border-radius: .5rem .5rem 0 0;
+    display: grid;
+    gap: 2rem;
+}
+.grid__group img{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.grid__group h1{
+    color: var(--clr-neutral-200);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-family: var(--ff-base);
+    letter-spacing: .5rem;
+}
+.grid__group p{
+    color: var(--clr-neutral-100);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    font-family: var(--ff-accent);
+}
+.grid__group button{
+    background: var(--clr-neutral-200);
+    color: var(--clr-primary-100);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 10rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: 1px var(--clr-neutral-200) solid;
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+}
+
+.grid__groups{
+    background: var(--clr-primary-200);
+    display: grid;
+    gap: 2rem;
+}
+.grid__groups img{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.grid__groups h1{
+    color: var(--clr-neutral-200);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-family: var(--ff-base);
+    letter-spacing: .5rem;
+}
+.grid__groups p{
+    color: var(--clr-neutral-100);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    font-family: var(--ff-accent);
+    
+}
+.grid__groups button{
+    background: var(--clr-neutral-200);
+    color: var(--clr-primary-200);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 10rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: 1px var(--clr-neutral-200) solid;
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+}
+
+.grid__grouped{
+    background: var(--clr-primary);
+    border-radius: 0 0 .5rem .5rem;
+    display: grid;
+    gap: 2rem;
+}
+.grid__grouped img{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.grid__grouped h1{
+    color: var(--clr-neutral-200);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-family: var(--ff-base);
+    letter-spacing: .5rem;
+}
+.grid__grouped p{
+    color: var(--clr-neutral-100);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    font-family: var(--ff-accent);
+}
+.grid__grouped button{
+    background: var(--clr-neutral-200);
+    color: var(--clr-primary);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 10rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: 1px var(--clr-neutral-200) solid;
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+}
+
+
+.attribution{
+    text-align: center;
+}
+
+@media(min-width: 600px){
+    body{
+        display: grid;
+        place-content: center;
+    }
+
+    .component{
+        display: flex;
+    }
+
+    .grid__group{
+        border-radius: .5rem 0 0 .5rem;
+    }
+
+    .grid__group button{
+        width: 40%;
+    }
+
+    .grid__grouped{
+        border-radius: 0 .5rem .5rem 0;
+    }
+    .grid__grouped button{
+        width: 40%;
+    }
+    .grid__groups button{
+        width: 40%;
+    }
+}
